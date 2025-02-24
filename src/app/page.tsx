@@ -113,13 +113,6 @@ export default function KahootQuiz() {
     setLeaderboard(updatedLeaderboard);
   };
 
-  // Optionally, you could fetch the global leaderboard on mount or when needed:
-  const fetchLeaderboard = async () => {
-    const res = await fetch("/api/leaderboard");
-    const data = await res.json();
-    setLeaderboard(data);
-  };
-
   const resetQuiz = () => {
     setCurrentQuestion(0);
     setScore(0);
