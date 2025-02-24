@@ -1,3 +1,6 @@
+/* eslint no-use-before-define: 0 */ 
+
+
 "use client";
 
 import React, { useState, useEffect } from "react";
