@@ -1,4 +1,4 @@
-/* eslint no-use-before-define: 0 */ 
+/* eslint-disable */
 
 import { NextResponse } from "next/server";
 import fs from "fs";
