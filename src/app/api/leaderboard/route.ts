@@ -1,3 +1,5 @@
+/* eslint no-use-before-define: 0 */ 
+
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
@@ -25,6 +27,7 @@ export async function POST(request: Request) {
     leaderboard = JSON.parse(data);
   } catch (error) {
     leaderboard = [];
+    return error
   }
   
   // Check if an entry with the same username exists
